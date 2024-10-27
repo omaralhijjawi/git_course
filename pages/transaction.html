@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction list</title>
+    <link rel="stylesheet" href="../css/transaction.css"> 
+</head>
+<body>
+    <div id="header-container"></div>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+            <img class="search-icone" src="../images/SeacrhIcone.jpg">
+        </button>
+  </div>
+    <div class="table-container">
+        <h3>Transaction</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reference</th>
+                    <th>Operation</th>
+                    <th>Vslue Date</th>
+                    <th>Amount</th>
+                    <th>Actual amount</th>
+                    <th>currency</th>
+                    <th>Dr Bank</th>
+                    <th>Cr Bank</th>
+                    <th>Local</th>
+                    <th>Reconciliation</th>
+                    <th>Remote</th>
+                    <th>Payment</th>
+                    <th>Priority</th>
+                    <th>TTC</th>
+                    <th>Via</th>
+                    <th>Dr bank account</th>
+                    <th>Debtor Bank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P0000000000000089</td>
+                    <td>Direct credit</td>
+                    <td>1.000</td>
+                    <td>1.000</td>
+                    <td>JOD</td>
+                    <td>BJORJOA0</td>
+                    <td>CAABJOA0</td>
+                    <td><span style="color: rgb(91, 93, 91);">sent</span></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>001</td>
+                    <td>WEB</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="footer-container"></div>
+    <script src="../JS/transaction.js"></script>
+</body>
+</html>

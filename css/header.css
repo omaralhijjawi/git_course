@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 5px;
+}
+.navbar ul li {
+    margin-right: 20px;
+    position: relative;
+}
+.logoImage {
+    height: 70px;
+    width: 70px;
+}
+.dropdown-select {
+    padding: 5px;
+    font-size: 16px;
+    width: 89px;
+    border: none;
+}
+
+.highlight {
+    color: rgba(0, 0, 0, 0.5);
+}
+.Monitoring {
+    padding-left: 10px;
+}
+.user-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.user-select {
+    padding: 5px;
+    font-size: 16px;
+    width: 70px;
+    border: none;
+}
+.content {
+    margin: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+}
+#Monitoring-select{
+    width: 110px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+    }
+
+    .user-info {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    .dropdown-select {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .user-select {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logoImage {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar ul li {
+        font-size: 14px;
+    }
+
+    .dropdown-select, .user-select {
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    .content {
+        font-size: 1em;
+        margin: 20px;
+    }
+}

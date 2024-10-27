@@ -1,0 +1,245 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;  
+}
+
+.left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.left-section input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.status {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 80px;
+}
+
+.open {
+    background-color: #4CAF50;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.left-content, .right-content {
+    width: 48%;  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.required {
+    color: red;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.currency-Code, .actual_Amount, .atch_Number, .priority {
+    display: flex;
+}
+#currencyCode, #actualAmount, #batchNumber {
+    width: 160px;
+    margin-left: 15px;
+    margin-top: -5px;
+    background-color: white;
+    border: none;
+}
+
+#priority {
+    background-color: floralwhite;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 9px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    max-width: 18%;  
+    height: 43px;
+}
+
+.button-container .move-authorization {
+    background-color: #026108;
+    color: white;
+}
+
+.button-container .close-button {
+    background-color: #b9bab9;
+    color: white;
+    margin-left: auto;  
+}
+
+.button-container .delete-button {
+    background-color: #026108;
+    color: white;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    margin-bottom: -26px;
+}
+
+/* Styling the input field */
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+.search-input:focus {
+  border-color: #007bff;
+}
+.search-button {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search-button i {
+  color: white;
+  font-size: 18px;
+}
+.search-icone{
+    height: 23px;
+    margin-left: -63px;
+}
+@media (max-width: 900px) {
+    .left-section, .right-section {
+        width: 100%;  
+    }
+
+    .form-header {
+        flex-direction: column;  
+        align-items: flex-start;
+    }
+
+    .form-content {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .button-container {
+        justify-content: center; 
+    }
+
+    .button-container button {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+    input, select {
+        font-size: 14px;  
+
+    .button-container {
+        flex-direction: column;  
+    }
+
+    .button-container button {
+        width: 100%; 
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diredt Credit Batch</title>
+    <link rel="stylesheet" href="../css/direct_credit_batch.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="form-header">
+            <div class="left-section">
+                <label for="batchReference">Batch Reference<span class="required">*</span></label>
+                <input type="text" id="batchReference" placeholder="Enter Batch Reference" value="BJORNAT11003B001">
+            </div>
+            <div class="right-section">
+                <label>Status</label>
+                <span class="status open">Open</span>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="form-content">
+            <div class="left-content">
+                <label for="valueDate">Value Date<span class="required">*</span></label>
+                <input type="date" id="valueDate" value="">
+                <div class="currency-Code">
+                <label for="currencyCode">Currency Code</label>
+                <input type="text"  id="currencyCode" value="JOD" disabled>
+            </div>
+            <div class="actual_Amount">
+                <label for="actualAmount">Actual Amount</label>
+                <input type="text"  id="actualAmount" value="1.000" disabled>
+            </div>
+            </div>
+            <div class="right-content">
+                <h3>Batch Additional Information</h3>
+                <div class="atch_Number"> 
+                <label for="batchNumber">Number</label>
+                <input type="number"  id="batchNumber" value="1" disabled>
+            </div>
+            <div class="priority">
+                <label for="priority">Priority<span class="required">*</span></label>
+                <select id="priority">
+                    <option value="100" selected>100 - Clearing priority (default)</option>
+                    <option value="200">200 - High priority</option>
+                </select>
+            </div>
+            </div>
+            
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">
+                <img class="search-icone" src="../images/SeacrhIcone.jpg">
+            </button>
+      </div>
+        <div class="table-container">
+            <h3>Payments</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Reference</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Description</th>
+                        <th>CBS Status</th>
+                        <th>CBS Description</th>
+                        <th>Bank</th>
+                        <th>Debtor Account</th>
+                        <th>Debtor Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P0000000000000089</td>
+                        <td>1.000</td>
+                        <td><span style="color: green;">Open</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Cario amman bank</td>
+                        <td>JO72BJOR010000001030598201001</td>
+                        <td>Omar Belal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <button class="move-authorization">Move to authorization</button>
+            <button class="close-button">Close</button>
+            <button class="delete-button">Delete</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../JS/direct_credit_batch.js"></script>
+</body>
+</html>

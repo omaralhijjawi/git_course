@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <li><img class="logoImage" src="../images/bayanatlogo.png"> </li>
+                    <select id="capture-select" class="dropdown-select"   >
+                        <option value="" disabled selected hidden>Capture</option> 
+                        <option class="highlight" value="ach">ACH</option>
+                        <option value="standing-direct-credit">Standing direct credit</option>
+                        <option value="standing-direct-debit">Standing direct debit</option>
+                        <option value="standing-direct-debit-mandate">Standing direct debit with mandate</option>
+                        <option value="direct-debit">Direct debit</option>
+                        <option value="./direct_credit.html">Direct credit</option>
+                        <option value="direct-debit-mandate">Direct debit with mandate</option>
+                        <option value="new-mandate">New mandate</option>
+                        <option value="import-mx">Import (MX format)</option>
+                        <option value="import-multiple">Import (multiple direct format)</option>
+                        <option value="free-format-mtn99">Free format message (MTn99)</option>
+                        <option class="highlight" value="rtgs">RTGS</option>
+                        <option value="institution-transfer">Institution transfer</option>
+                        <option value="single-customer-transfer">Single customer credit transfer</option>
+                        <option value="multiple-customer-transfer">Multiple customer credit transfer</option>
+                        <option value="free-format-message">Free format message (MTn99)</option>
+                    </select>
+                </li>
+                <select id="Monitoring-select" class="dropdown-select" >
+                    <option value="" disabled selected hidden>Monitoring</option> 
+                    <option>standing payment orders</option>
+                    <option>Payment Search</option>
+                    <option value="./transaction.html">Transaction</option>
+                    <option>Message audit</option>
+                    <option>Issuad mandates</option>
+                    <option> Recived  mandates</option>
+                    <option>Internal payment</option>
+                    <option>Reconciliation</option>
+                    <option>Send queue</option>
+                </select>
+                <li><a href="#">Dictionary</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+            <div class="user-info">
+                <span>Tasks</span>
+                <select id="user-select" class="user-select">
+                        <option value="user1">user1</option>
+                        <option value="user2">user2</option>
+                        <option value="user3">user3</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <script src="../JS/header.js"></script>
+</body>
+</html>

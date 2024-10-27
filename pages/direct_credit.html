@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Credit Form</title>
+    <link rel="stylesheet" href="../css/direct_credit.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <form id="direct-credit-form">
+            <!-- Reference Field -->
+            <div class="form-group">
+                <p class="pr_head">New Direct Credit</p>
+                <label for="reference">Reference*</label>
+                <input type="text" id="reference" value="P000000000000089" required disabled>
+            </div>
+            <!-- Amount and Value Date Row -->
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="amount">Amount*</label>
+                    <input type="number" id="amount" value="" step="1" required >
+                </div>
+                <div class="form-group">
+                    <label for="amount-currency"></label>
+                    <select id="amount-currency">
+                        <option>JOD</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="value-date">Value Date*</label>
+                    <input type="date" id="value-date" value="2024-10-03" required>
+                </div>
+            </div>
+            <!-- Instructed Amount and Exchange Rate Row -->
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="instructed-amount">Instructed Amount*</label>
+                    <input type="number" id="instructed-amount" value="" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructed-currency"></label>
+                    <select id="instructed-currency">
+                        <option>JOD</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exchange-rate">Exchange Rate</label>
+                    <input type="text" id="exchange-rate" value="">
+                </div>
+            </div>
+            <!-- Ordering Button -->
+            <div class="form-group-row align-right">
+                <button type="submit">Ordering</button>
+            </div>
+            <p class="border">  </p>
+            <!---Debtor bank section-->
+            
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="debtor-bank">Debtor bank</label>
+                    <select id="debtor-bank">
+                        <option>BANK A </option>
+                        <option>BANK B</option>
+                    </select>
+                </div>
+                <div class="form-group account-group">
+                    <label for="customer-account">Customer account*</label>
+                    <div class="input-button-wrapper">
+                        <input type="text" id="customer-account" value="" required Iban > 
+                        <p  class="iban-button">IBAN</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ordering Customer Name and Address -->
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="ordering-customer">Ordering customer name*</label>
+                    <input type="text" id="ordering-customer" value="" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" >
+                </div>
+        </div>
+        <div class="form-group-row align-right">
+            <button type="submit">Account with</button>
+        </div>
+        <p class="border">  </p>
+        <!--Creditor sections -->
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="beneficiary-bank">Beneficiary bank*</label>
+                <select id="beneficiary-bank" required>
+                    <option>BANK A </option>
+                    <option>BANK B </option>
+                </select>
+            </div>
+            <div class="form-group account-group">
+                <label for="customer-account">Customer account*</label>
+                <div class="input-button-wrapper">
+                    <input type="text" id="customer-account" value="" required Iban > 
+                    <p  class="iban-button">IBAN</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Row 2: Beneficiary Customer Name and Address -->
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="customer-name">Beneficiary customer name*</label>
+                <input type="text" id="customer-name" value="" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" >
+            </div>
+        </div>
+        <p class="border">  </p>
+        <!--Transaction Detailes -->
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="document-no">Document No</label>
+                <input type="text" id="document-no" value="No9990" disabled>
+            </div>
+            <div class="form-group">
+                <label for="document-date">Document Date</label>
+                <input type="date" id="document-date" value="">
+            </div>
+        </div>
+        <!-- Row 2: Transaction Type and Remittance Information -->
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="transaction-type">Transaction type*</label>
+                <select id="transaction-type" required>
+                    <option>001 - Ordinary transfers</option>
+                    <option>002 - Salary transfers</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="remittance-info">Remittance information</label>
+                <input type="text" id="remittance-info" >
+            </div>
+        </div>
+        <!-- Row 3: Charge Bearer and Regulatory Reporting -->
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="charge-bearer">Charge bearer*</label>
+                <select id="charge-bearer" required>
+                    <option>SHA - Shared</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="regulatory-reporting">Regulatory reporting</label>
+                <input type="text" id="regulatory-reporting" >
+            </div>
+        </div>
+        <!-- Row 4: Charge Amount and Instruction for Next Agent -->
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="Charged_ammount">Charged ammount*</label>
+                <input type="number" id="Charged_ammount" value="" required>
+            </div>
+            <div class="form-group">
+                <label for="Charged_ammount"></label>
+                <select id="Charged_ammount_currency">
+                    <option>JOD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="instruction-next-agent">Instruction for next agent</label>
+                <input type="text" id="instruction-next-agent">
+            </div>
+        </div>
+        <div class="create-button">
+            <div class="checkbox-button">
+            <input type="checkbox"  id="confirm-checkbox"> 
+            <label for="">create another</label>
+        </div>
+            <input type="submit" id="create-button" class="create-submet" value="create">
+        </div>
+        </form>
+    </div>
+    </div>
+    <div id="footer">  </div>
+    <script src="../JS/direct_credit.js"></script>
+</body>
+</html>
